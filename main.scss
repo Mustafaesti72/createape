@@ -1,0 +1,305 @@
+/*!
+Theme Name: createape
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: createape
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+createape is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+.container-fluid{
+	padding-right: 0px; 
+    padding-left: 0px;
+	position: relative;
+  	text-align: center;
+}
+
+.full-width {
+	width: 100%;
+	position: relative;
+  	text-align: center;
+	margin-top: -130px;
+	.flexslider {
+		margin: 0 0 0px;
+		border: 0px solid #fff;
+		.inside-slide{
+			width: 100%;
+			position: relative;
+			  text-align: center;
+			  .centered-slide {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color:#FFFFFF;
+				text-align: center;
+				
+				.centered-title {
+					font-size: 22px;
+					line-height: 78px;
+					color:#FFFFFF;
+				
+				}  
+				.centered-text {
+					text-align: center;
+					width: 100%;
+					color: #D3D8E2;
+				}
+				.centered-button_text {
+					color:#FFFFFF;
+				}
+				
+				.button-inside-slide{
+					margin: 6px;
+					padding: 15px 34px;
+					background-color: #FF7300;
+					border: #FF7300;
+					color: white;
+					cursor: pointer;
+				}
+			}  
+		}		
+	}	
+}
+
+.bg-black{
+	background-color: black;
+}
+
+.customer{
+	margin-top:5%;
+}
+.customer-title{
+	color: white;
+
+}
+
+.navbar {
+	z-index: 1;
+	background: transparent!important;
+    margin-bottom: 0px;
+}
+
+.navbar a{
+	color: white!important;
+}
+
+.nav-left{
+float: left;
+}
+.nav-left img{
+	width: 200px;
+}
+
+.nav-right{
+	float: right;
+}
+
+.navbar-full-width{
+	margin-right: 50px!important;
+	margin-left: 50px!important;
+}
+
+.flex-direction-nav {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+.dropdown-menu{
+	background-color: #15171F;
+}
+
+.navbar-nav li a {
+	color: #eee;
+}
+  
+.dropdown-item:focus, .dropdown-item:hover {
+	color: #ff7300;
+    text-decoration: none;
+    background-color: #16181b;
+}
+
+
+// Work with us
+
+#services {
+	.services-top {
+		padding: 70px 0 20px;
+		.services-list {
+			padding-top: 50px;
+			.service-block {
+				margin-bottom: 25px;
+				.ico {
+					font-size: 38px;
+					float: left;
+				}
+				.text-block {
+					margin-left: 85px;
+					.name {
+						font-size: 13px;
+						font-weight: 900;
+						margin-bottom: 5px;
+						color: white;
+						text-align: initial;
+					}
+					.text {
+						font-size: 12px;
+						line-height: 2.2;
+						font-weight: 300;
+						color:#A8ABB2;
+						text-align: initial;
+					}
+				}
+			}
+		}
+	}
+	.services-without-top {
+		padding: 0px 0 50px;
+		.services-list {
+			padding-top: 50px;
+			.service-block {
+				margin-bottom: 25px;
+				.ico {
+					font-size: 38px;
+					float: left;
+				}
+				.text-block {
+					margin-left: 85px;
+					.name {
+						font-size: 13px;
+						font-weight: 900;
+						margin-bottom: 5px;
+						color: white;
+						text-align: initial;
+					}
+					.text {
+						font-size: 12px;
+						line-height: 2.2;
+						font-weight: 300;
+						color:#A8ABB2;
+						text-align: initial;
+					}
+				}
+			}
+		}
+	}
+}         
+
+@media only screen and (max-width: 600px) {
+	.navbar-light .navbar-nav .nav-link {
+		color: black!important;
+	}
+	.nav-left {
+		width: 130px;
+	}
+	.navbar>.container-fluid {
+		display: inline-flex;
+	}
+	.centered-text {
+		text-align: center;
+		font-size: 10px;
+		color: #D3D8E2;
+	}
+	.centered-text h6{
+		font-size: 12px;
+	}
+
+	.centered-title {
+		font-size: 8px;
+		line-height: 78px;
+		color: #FFFFFF;
+	}
+	.centered-title h1{
+		font-size: 21px;
+	}
+
+	.mobile-edition{
+		margin-top: 71px;
+	}
+	.button-header{
+		visibility: hidden;
+	}
+	
+}
+
+.button-header{
+	margin: 6px;
+    padding: 15px 34px;
+	background-color: #FF7300;
+    border: #FF7300;
+	color: white;
+	cursor: pointer;
+}
+
+.navbar-collapse {
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	background-color: black;
+}
